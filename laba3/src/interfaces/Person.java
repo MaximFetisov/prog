@@ -20,7 +20,6 @@ public abstract class Person {
         System.out.println(name + " ест с удовольствием.");
     }
 
-    // === Абстрактный метод speak() — теперь внутри Person ===
     public abstract void speak();
 
     @Override
@@ -39,4 +38,5 @@ public abstract class Person {
     public String toString() {
         return name + " (настроение: " + mood + ")";
     }
+
 }
