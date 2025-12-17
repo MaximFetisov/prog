@@ -16,7 +16,7 @@ public class FrekenBok extends Person {
         if (mood == Mood.HAPPY) {
             isSinging = true;
             System.out.println(name + " поёт громко: \"Ах, Фрида, это было бы для тебя лучше!..\"");
-            NoiseLevel.getInstance().increase(30); // Повышаем шум от пения
+            NoiseLevel.getInstance().increase(30);
         }
     }
 
@@ -24,7 +24,7 @@ public void stopSinging() {
     if (isSinging) {
         isSinging = false;
         System.out.println(name + " замолкает.");
-        NoiseLevel.getInstance().decrease(30); // ← изменение шума → автоматическое уведомление
+        NoiseLevel.getInstance().decrease(30); 
     }
 }
 
@@ -52,4 +52,5 @@ public void stopSinging() {
             System.out.println(name + " выглядит усталой и молча.");
         }
     }
+
 }
